@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 def load_tokens(server):
     files = FILES
-    return json.load(open(f"tokens/{files.get(server,'token_bd.json')}"))
+    return json.load(open(f"tokens/{files.get(server,'token_ind.json')}"))
 
 def get_headers(token):
     return {
